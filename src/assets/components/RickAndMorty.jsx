@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
-export default function RickAndMorty() {
-  const [characters, setCharacters] = useState([]);
-  const [numOfCharacters, setNumOfCharacters] = useState(0);
-
+export default function RickAndMorty({
+  characters,
+  setCharacters,
+  numOfCharacters,
+  setNumOfCharacters,
+}) {
   useEffect(() => {
     const forFetching = async () => {
       try {
