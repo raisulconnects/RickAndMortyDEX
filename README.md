@@ -4,5 +4,5 @@ A simple React project built with Vite, Tailwind CSS, and DaisyUI to explore cha
 This project helped me practice **API fetching**, **React hooks (`useEffect`)**, state management, and pagination.
 
 ## 🚀 Live Demo
+[View it live on Netlify](https://rickmortydex.netlify.app/){:target="_blank" rel="noopener noreferrer"}
 
-Netlify -> [Rick and Morty DEX](https://rickmortydex.netlify.app/)
