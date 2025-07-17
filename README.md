@@ -5,4 +5,4 @@ This project helped me practice **API fetching**, **React hooks (`useEffect`)**,
 
 ## 🚀 Live Demo
 
-[Netlify - Rick and Morty DEX](https://rickmortydex.netlify.app/)
+Netlify -> [Rick and Morty DEX](https://rickmortydex.netlify.app/)
