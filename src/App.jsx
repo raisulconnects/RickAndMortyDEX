@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./assets/components/Navbar";
-import RickAndMorty from "./assets/components/rickandmorty";
+import RickAndMorty from "./assets/components/RickAndMorty";
+
 import PageManager from "./assets/components/PageManager";
 
 function App() {
