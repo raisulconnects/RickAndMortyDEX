@@ -5,6 +5,7 @@ export default function RickAndMorty({
   setCharacters,
   numOfCharacters,
   setNumOfCharacters,
+  setAllCharacters,
 }) {
   useEffect(() => {
     const forFetching = async () => {
@@ -15,6 +16,7 @@ export default function RickAndMorty({
         const data = await response.json();
         setNumOfCharacters(data.info.count);
         setCharacters(data.results);
+        setAllCharacters(data.results);
         console.log(data.results);
       } catch (e) {
         console.log(e);
