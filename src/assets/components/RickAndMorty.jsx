@@ -29,7 +29,7 @@ export default function RickAndMorty({
 
   return (
     <div>
-      <div className="text-center text-4xl my-10 ">
+      <div className="text-center text-4xl my-2 font-mono">
         <h1>Number Of Characters in the Show: {numOfCharacters} </h1>
       </div>
       <div className="grid grid-cols-3 place-items-center text-center gap-5 bg-gradient-to-br from-cyan-200 via-cyan-300 to-cyan-400 py-5">

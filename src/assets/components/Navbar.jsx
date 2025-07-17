@@ -18,7 +18,7 @@ export default function Navbar({
   };
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="fixed top-0 z-50 navbar bg-gradient-to-r from-cyan-500 to-teal-500 text-white shadow-md">
       <div className="flex-1">
         <a
           className="btn btn-ghost text-xl"
@@ -41,6 +41,7 @@ export default function Navbar({
                         "Showing Alive Characters"
                       )
                     }
+                    className="text-black"
                   >
                     Alive
                   </a>
@@ -53,6 +54,7 @@ export default function Navbar({
                         "Showing Dead Characters"
                       )
                     }
+                    className="text-black"
                   >
                     Dead
                   </a>
@@ -61,6 +63,28 @@ export default function Navbar({
             </details>
           </li>
         </ul>
+        <button
+          className="btn"
+          onClick={() => document.getElementById("my_modal_2").showModal()}
+        >
+          About
+        </button>
+        <dialog id="my_modal_2" className="modal">
+          <div className="modal-box">
+            <h3 className="font-bold text-lg text-black">Hey There!</h3>
+            <p className="py-4 text-black">
+              This project was built by <b>Raisul Islam</b> while learning
+              React. It helped me practice API fetching, useEffect, and managing
+              state using the Rick and Morty API. Big thanks to{" "}
+              <b>Alexandre Santos</b> for creating and maintaining the free Rick
+              and Morty API, making it easier for learners and developers to
+              build projects while learning.
+            </p>
+          </div>
+          <form method="dialog" className="modal-backdrop">
+            <button>Close</button>
+          </form>
+        </dialog>
       </div>
     </div>
   );
