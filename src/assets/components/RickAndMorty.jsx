@@ -6,12 +6,13 @@ export default function RickAndMorty({
   numOfCharacters,
   setNumOfCharacters,
   setAllCharacters,
+  currentPage,
 }) {
   useEffect(() => {
     const forFetching = async () => {
       try {
         const response = await fetch(
-          "https://rickandmortyapi.com/api/character/?page=1"
+          `https://rickandmortyapi.com/api/character/?page=${currentPage}`
         );
         const data = await response.json();
         setNumOfCharacters(data.info.count);
@@ -24,7 +25,7 @@ export default function RickAndMorty({
     };
 
     forFetching();
-  }, []);
+  }, [currentPage]);
 
   return (
     <div>
