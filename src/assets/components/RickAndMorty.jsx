@@ -3,7 +3,7 @@ import { useEffect } from "react";
 export default function RickAndMorty({
   characters,
   setCharacters,
-  numOfCharacters,
+  // numOfCharacters,
   setNumOfCharacters,
   setAllCharacters,
   currentPage,
@@ -30,14 +30,14 @@ export default function RickAndMorty({
   return (
     <div>
       <div className="text-center text-4xl my-2 font-mono">
-        <h1>Number Of Characters in the Show: {numOfCharacters} </h1>
+        {/* <h1>Number Of Characters in the Show: {numOfCharacters} </h1> */}
       </div>
-      <div className="grid grid-cols-3 place-items-center text-center gap-5 bg-gradient-to-br from-cyan-200 via-cyan-300 to-cyan-400 py-5">
+      <div className="grid sm:grid-cols-1 md:grid-cols-4 place-items-center text-center gap-5 bg-gradient-to-br from-cyan-200 via-cyan-300 to-cyan-400 py-5 pt-20">
         {characters.map((c) => (
           <div className="bg-white/80  rounded-2xl shadow-lg mt-5 hover:ring-1 hover:ring-cyan-900 hover:scale-105 transition-all duration-200 ">
             <img src={c.image} alt={c.name} className="rounded-t-2xl" />
-            <h1>{c.name}</h1>
-            <h1>
+            <h1 className="text-black">{c.name}</h1>
+            <h1 className="text-black">
               {c.status} {c.status === "Dead" ? "💀" : null}
             </h1>
           </div>
